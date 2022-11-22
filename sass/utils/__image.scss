@@ -1,0 +1,9 @@
+.image {
+  display: inline-flex;
+  padding-left: 30px;
+  position: relative;
+
+  &__first {
+    padding-left: 0;
+  }
+}

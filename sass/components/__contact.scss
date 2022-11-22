@@ -1,0 +1,30 @@
+.contact {
+  color: $textColor;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  display: inline-flex;
+  padding-top: 32px;
+  margin-left: 227px;
+
+  & .link {
+    color: $textColor;
+    display: block;
+    padding: 10px;
+    margin: 0;
+  }
+  &__address {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $whiteContent;
+    font-style: normal;
+    padding: 10px;
+    display: block;
+  }
+}

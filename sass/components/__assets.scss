@@ -1,0 +1,32 @@
+.assets {
+  display: flex;
+  justify-content: center;
+  
+  &__header {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $headerColor;
+  }
+  
+  &__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $textColor;
+    padding-right: 22px;
+    display: inline-flex;
+  }
+  &__icon {
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f5f4fa;
+  }
+}

@@ -1,0 +1,47 @@
+.link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  list-style: none;
+  color: $headerColor;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  margin: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+
+  &:hover {
+    color: $logoColor;
+  }
+
+  &:focus {
+    color: $logoColor;
+  }
+  &:active {
+    color: $logoColor;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+
+  &__social-media:hover svg {
+    color: #ffffff;
+    --color3: #ffffff;
+    border-radius: 50%;
+    background-color: $logoColor;
+  }
+  &:hover svg {
+    color: $logoColor;
+    stroke: $logoColor;
+    --color5: $logoColor;
+    --color4: $logoColor;
+    --color3: $logoColor;
+    --color2: $logoColor;
+    --color1: $logoColor;
+  }
+}
