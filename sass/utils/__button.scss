@@ -12,7 +12,12 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  margin-inline: 500px;
+
+position: absolute;
+margin: auto;
+top: 70%;
+right: 25%;
+
 
   &__position {
     display: flex;
