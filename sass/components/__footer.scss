@@ -1,10 +1,11 @@
 .footer {
   background-color: $backgroundColor;
   height: 252px;
-  width: 1200px;
+  width: 100%;
   margin: 0px;
   display: flex;
   position: relative;
+  bottom: 0;
 
   &__logo {
     font-family: Raleway, sans-serif;

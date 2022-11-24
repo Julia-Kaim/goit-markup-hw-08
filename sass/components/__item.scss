@@ -43,7 +43,7 @@
   }
   &__members {
     background-color: $whiteContent;
-    width: 270px;
+    width: 450px;
 
     display: flex;
     flex-wrap: wrap;
@@ -81,10 +81,14 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: $textColor;
-    padding-inline: 60px;
+    padding-inline: 80px;
     padding-top: 30px;
     padding-bottom: 30px;
     display: block;
     position: relative;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
   }

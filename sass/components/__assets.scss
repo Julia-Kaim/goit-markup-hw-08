@@ -7,7 +7,7 @@
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: $headerColor;
   }
   
@@ -22,8 +22,9 @@
     display: inline-flex;
   }
   &__icon {
-    width: 270px;
+    width: 450px;
     display: flex;
+    
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
