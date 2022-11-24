@@ -48,8 +48,98 @@
               ><span>Web</span> <span class="logo__studio">Studio</span></a
             >
           </span> 
-          <div class="nav__icon">
-<svg class="svg" width="50" height="50"><use href="./images/icons.svg.svg#menu"></use> </svg>  </div>
+
+
+          <!-- mobile menu -->
+
+                <!-- <div class="mobile-menu dnone">
+
+      <button class="toggle-menu">X</button>
+    </div> -->
+
+
+       
+            <div class="mobile-menu__overlay" data-menu>
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn" type="button" data-menu-close>
+            <svg class="mobile-menu__icon" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-close_mobile"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list-nav">
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav mobile-menu__link-nav-accent" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__list-contact">
+            <li class="mobile-menu__list-contact-tel">
+              <a class="mobile-menu__link-contact-tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu__list-contact-mailto">
+              <a class="mobile-menu__link-contact-mailto" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__list-social">
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="instagram"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="twitter"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="facebook"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+
+
+<button class="nav__icon" data-menu-open>
+<svg class="svg" width="50" height="50"><use href="./images/icons.svg.svg#menu"></use> </svg>  </>
           <!-- <ul class="menu list">
             <li><a href="#" class="link underline">Agencja</a></li>
             <li><a href="portfolio.html" class="link">Portfolio</a></li>
@@ -285,7 +375,7 @@
         </section></div>
 
 
-        
+
       <footer class="footer">
         <div class="footer__position">
         <div class="logo__footer"
@@ -378,6 +468,8 @@
   <input type="submit" value="Wyślij" class="form__submit" />
 </form></div>
     </div>
+
       <script src="./js/modal.js"></script>
+      <script src="./js/mobile-menu.js"> </script>
   </body>
 </html>
