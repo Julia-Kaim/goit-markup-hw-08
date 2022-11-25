@@ -3,8 +3,26 @@
   margin: 0 auto;
   // flex-basis: 100%;
   width: 100%;
+  display: block;
+
+  
+@media (min-width: $phone) and (max-width: $tablet) {
+  .section {
+   width: 480px;
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .section {
+    width: 768px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .section {
+    width: 1200px;
+}
   &__first {
     background-color: $whiteContent;
 margin-inline: 20px;
   }
+}
 }

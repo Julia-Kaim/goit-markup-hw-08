@@ -12,3 +12,26 @@
     margin-right: 8px;
   }
 }
+
+@media (min-width: $phone) and (max-width: $tablet) {
+  .menu {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .menu {
+    width: 768px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .menu {
+    margin-left: 93px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  list-style: none;
+  display: inline-flex;
+  }
+}

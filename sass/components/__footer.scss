@@ -1,19 +1,21 @@
 .footer {
   background-color: $backgroundColor;
-  height: 252px;
+  height: auto;
   width: 100%;
   margin: 0px;
   display: flex;
   position: relative;
-  bottom: -1300px;
+  bottom: 0;
 
   &__logo {
-    font-family: Raleway, sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    text-align: left;
+  font-family: Raleway;
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0.03em;
+text-align: center;
+
+
     color: $logoColor;
     text-decoration: none;
     display: flex;
