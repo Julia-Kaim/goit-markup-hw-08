@@ -4,13 +4,14 @@
       rgba(0, 0, 0, 0.422),
       rgba(35, 32, 32, 0.559)
     ),
-    url(../images/Header.jpg);
-  background-size: 100% 120%;
-
+    url(../images/background.jpg);
+  object-fit: cover;
+background-size: cover;
+background-position: center center;
   color: $whiteContent;
   
   height: 330px;
-  width: 100%;
+  width: 100vw;
 position: relative;
 
 
