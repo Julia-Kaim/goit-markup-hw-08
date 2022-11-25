@@ -1,8 +1,8 @@
 .section {
   padding-block: 94px;
   margin: 0 auto;
-  flex-basis: 100%;
-  width: 100%;
+  // flex-basis: 100%;
+  width: 100vw;
   &__first {
     background-color: $whiteContent;
 margin-inline: 20px;

@@ -1,0 +1,59 @@
+.mobile-menu__overlay {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__overlay.is-open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: initial;
+  visibility: visible;
+}
+
+
+.mobile-menu {
+  & {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 40px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: $textColor;
+    opacity: 1;
+    background-color: $whiteContent;
+    z-index: 5;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+&__item {
+  color: black;
+}
+
+  &__button {
+    position: absolute;
+    background-color: $textColor;
+    width: 50px;
+    height: 50px;
+    border: none;
+    z-index: 6;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__btn:hover,
+  &__btn:focus {
+    fill: $logoColor;
+  }
+
+
+
+}
