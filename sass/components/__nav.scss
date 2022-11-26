@@ -1,12 +1,12 @@
 .nav {
   background-color: $whiteContent;
 
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
+  margin-inline: auto;
 
- 
   &__button {
     background-color: $whiteContent;
     border: none;
@@ -14,8 +14,32 @@
     right: 0;
   }
   &__:hover {
-   filter: invert(42%) sepia(92%) saturate(1530%) hue-rotate(185deg)
+    filter: invert(42%) sepia(92%) saturate(1530%) hue-rotate(185deg)
       brightness(101%) contrast(91%);
- 
+  }
+
+  @media screen and (min-width: $phone) {
+    .nav {
+      max-width: $phone;
+    }
+    .nav__button {
+      visibility: visible;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    .nav {
+      max-width: $tablet;
+    }
+    .nav__button {
+      visibility: hidden;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    .nav {
+      max-width: $desktop;
+    }
+    .nav__button {
+      visibility: hidden;
+    }
   }
 }

@@ -1,9 +1,10 @@
 .wrapper {
-  width: 100%;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  margin-inline: auto;
+
   @media screen and (min-width: $phone) {
     .wrapper {
       max-width: $phone;

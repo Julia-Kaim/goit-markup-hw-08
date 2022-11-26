@@ -1,8 +1,22 @@
 body {
   font-family: "Roboto", sans-serif;
   color: $headerColor;
-width: 100vw;
- margin: 0;
+  width: 100vw;
+  margin: 0;
+
+  @media screen and (min-width: $phone) {
+    body {
+      max-width: $phone;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    body {
+      max-width: $tablet;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    body {
+      max-width: $desktop;
+    }
+  }
 }
-
-

@@ -1,64 +1,16 @@
-// .assets {
-//   display: flex;
-//   justify-content: center;
-  
-//   &__header {
-//     font-size: 14px;
-//     font-weight: 700;
-//     line-height: 16px;
-//     letter-spacing: 0.03em;
-//     text-align: center;
-//     color: $headerColor;
-//   }
-  
-//   &__description {
-//     font-size: 14px;
-//     font-weight: 400;
-//     line-height: 24px;
-//     letter-spacing: 0.03em;
-//     text-align: left;
-//     color: $textColor;
-//     padding-right: 22px;
-//     display: inline-flex;
-//   }
-//   &__icon {
-//     width: 450px;
-//     display: flex;
-    
-//     justify-content: center;
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-//     background-color: #f5f4fa;
-//   }
-// }
- @media screen and (min-width: $phone) {
-    .assets {
-      display: flex;
-  justify-content: center;
-    }
-  }
-  @media screen and (min-width: $tablet) {
-    .assets {
-      display: flex;
-      flex-direction: row;
-      max-width: $tablet;
-    }
-  }
-  @media screen and (min-width: $desktop) {
-    .assets {
+.assets {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  
+
   &__header {
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: $headerColor;
   }
-  
+
   &__description {
     font-size: 14px;
     font-weight: 400;
@@ -70,14 +22,66 @@
     display: inline-flex;
   }
   &__icon {
-    width: 270px;
+    width: 450px;
     display: flex;
-    
+
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #f5f4fa;
   }
 }
-    } 
-  
+
+&__header {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: $headerColor;
+}
+
+&__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: $textColor;
+  padding-right: 22px;
+  display: inline-flex;
+}
+&__icon {
+  width: 270px;
+  display: flex;
+
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
+@media screen and (min-width: $phone) {
+  .assets {
+    max-width: $phone;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .assets {
+    max-width: $tablet;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    
+  }
+  .assets__icon {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .assets {
+    max-width: $desktop;
+    display: flex;
+    flex-direction: row;
+  }
+}
