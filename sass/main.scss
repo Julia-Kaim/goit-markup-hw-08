@@ -1,3 +1,4 @@
+@import "./utils/_normalize";
 @import "./utils/_variables";
 @import "./utils/_underline";
 @import "./utils/_link";
@@ -35,5 +36,3 @@
 @import "./components/_form";
 @import "./components/_newsletter";
 @import "./components/_mobile-menu";
-
-@import "node_modules/modern-normalize/modern-normalize.css";

@@ -39,6 +39,11 @@
   .header__title {
     max-width: $phone;
   }
+    .header__button {
+    margin-inline: 200px;
+   position: absolute;
+   top: 70%;
+  
 }
 @media screen and (min-width: $tablet) {
   .header {
@@ -56,8 +61,12 @@ text-align: center;
     
     margin-inline: 150px;
   }
-    &__header__button {
+    .header__button {
     margin-inline: 200px;
+   position: absolute;
+   top: 70%;
+   left: 10%;
+
   }
 }
 @media screen and (min-width: $desktop) {
@@ -65,7 +74,15 @@ text-align: center;
     max-width: $desktop;
   }
   .header__title {
-    max-width: $desktop;
-   
+
+margin-left: 350px;
   }
+   .header__button {
+    margin-inline: 200px;
+   position: absolute;
+   top: 70%;
+   left: 30%;
+
+  }
+}
 }
