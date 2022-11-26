@@ -4,7 +4,7 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  
+
   &__social {
     list-style: none;
     display: flex;
@@ -13,25 +13,25 @@
     padding: 0;
   }
 }
-  @media screen and (min-width: $phone) {
-    .list {
-      display: flex;
-      flex-direction: column;
-    }
+@media screen and (min-width: $phone) {
+  .list {
+    display: flex;
+    flex-direction: column;
   }
-  @media screen and (min-width: $tablet) {
-    .list {
-      display: flex;
-      flex-direction: row;
-      max-width: $tablet;
-    }
-  }
-  @media screen and (min-width: $desktop) {
-    .list {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-    
-  
+}
+@media screen and (min-width: $tablet) {
+  .list {
+    max-width: $tablet;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
 
+  }
+}
+@media screen and (min-width: $desktop) {
+  .list {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: $headerColor;
-  width: 100vw;
+  // max-width: 100vw;
   margin: 0;
 
   @media screen and (min-width: $phone) {

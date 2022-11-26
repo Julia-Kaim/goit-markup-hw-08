@@ -1,8 +1,9 @@
 .team {
   background-color: $sectionColor;
   // height: 648px;
-  width: 100%;
-display: block;
+  // width: 100%;
+// display: flex;
+// flex-wrap: wrap;
 
 
   &__header {
@@ -15,5 +16,31 @@ display: block;
   &__members {
     width: 1200px;
     display: flex;
+ 
+ }
+
+@media screen and (min-width: $phone) {
+  .team {
+    max-width: $phone;
   }
+}
+@media screen and (min-width: $tablet)  {
+  .team {
+    max-width: $tablet;
+ display: flex;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .team {
+    margin-left: 93px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  list-style: none;
+  display: inline-flex;
+  }
+
+}
 }
