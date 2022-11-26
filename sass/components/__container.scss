@@ -2,23 +2,22 @@
   padding: 0px;
   margin: 0 auto;
   box-sizing: border-box;
-  width: 100%;
+  max-width: 100vw;
   // display: block;
 
-  @media (min-width: $phone) and (max-width: $tablet) {
+  @media screen and (min-width: $phone) {
     .container {
-      width: 480px;
+      max-width: $phone;
     }
   }
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     .container {
-      width: 768px;
-    
+      max-width: $tablet;
     }
   }
   @media screen and (min-width: $desktop) {
     .container {
-      width: 1200px;
+      max-width: $desktop;
     }
   }
 }

@@ -6,26 +6,66 @@
     ),
     url(../images/background.jpg);
   object-fit: cover;
-background-size: cover;
-background-position: center center;
+  background-size: cover;
+  background-position: center center;
   color: $whiteContent;
-  
   height: 330px;
   width: 100vw;
-position: relative;
-
+  margin-inline: auto;
+  position: relative;
 
   &__title {
-   font-size: 26px;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    font-family: Roboto;
+    position: absolute;
+    top: 30%;
+   
+   
+   
+  }
+  &__header__button {
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: $phone) {
+  .header {
+    max-width: $phone;
+  }
+  .header__title {
+    max-width: $phone;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .header {
+    max-width: $tablet;
+  }
+  .header__title {
+    font-family: Roboto;
+font-size: 26px;
 font-weight: 900;
 line-height: 42px;
 letter-spacing: 0.06em;
 text-align: center;
+
+    max-width: $tablet;
     
-    font-family: Roboto;
-    position: absolute;
-margin: auto;
-top: 30%;
+    margin-inline: 150px;
+  }
+    &__header__button {
+    margin-inline: 200px;
   }
 }
-
+@media screen and (min-width: $desktop) {
+  .header {
+    max-width: $desktop;
+  }
+  .header__title {
+    max-width: $desktop;
+   
+  }
+}

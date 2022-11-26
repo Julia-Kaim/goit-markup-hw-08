@@ -4,4 +4,19 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  @media screen and (min-width: $phone) {
+    .wrapper {
+      max-width: $phone;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    .wrapper {
+      max-width: $tablet;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    .wrapper {
+      max-width: $desktop;
+    }
+  }
 }
