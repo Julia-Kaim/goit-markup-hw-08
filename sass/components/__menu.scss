@@ -13,26 +13,33 @@
   }
 }
 
-@media screen and (max-width: $phone) {
+@media screen and (max-width: $tablet) {
   .menu {
+    display: none;
     visibility: hidden;
   }
 }
-@media screen and (min-width: $tablet)  {
+@media screen and (min-width: $tablet) {
   .menu {
-    width: 768px;
+    
     visibility: visible;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .menu__icon--first {
+    position: absolute;
+    left: -10px;
+  }
+  .menu__icon--second {
+    position: absolute;
+   left: -10px;
   }
 }
 @media screen and (min-width: $desktop) {
   .menu {
-    margin-left: 93px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  list-style: none;
-  display: inline-flex;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
   }
 }

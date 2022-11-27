@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  margin-inline: auto;
+  
 
   &__button {
     background-color: $whiteContent;
@@ -23,6 +23,7 @@
     filter: invert(42%) sepia(92%) saturate(1530%) hue-rotate(185deg)
       brightness(101%) contrast(91%);
   }
+}
 
   @media screen and (max-width: $phone) {
     .nav {
@@ -49,4 +50,4 @@
       visibility: hidden;
     }
   }
-}
+

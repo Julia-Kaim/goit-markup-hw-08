@@ -10,7 +10,7 @@
   background-position: center center;
   color: $whiteContent;
   height: 330px;
-  width: 100vw;
+  // width: 100vw;
   margin-inline: auto;
   position: relative;
 
@@ -23,66 +23,66 @@
     font-family: Roboto;
     position: absolute;
     top: 30%;
-   
-   
-   
   }
   &__header__button {
     margin-inline: auto;
+    position: absolute;
   }
 }
 
-@media screen and (max-width: $phone) {
+@media screen and (min-width: 0px) {
   .header {
     max-width: $phone;
   }
   .header__title {
     max-width: $phone;
+    margin-inline: auto;
   }
+  .header__button {
+    margin-inline: auto;
+    position: absolute;
+    top: 70%;
+    right: 25%;
+  }
+  @media screen and (min-width: $tablet) {
+    .header {
+      max-width: $tablet;
+      margin-inline: auto;
+    }
+    .header__title {
+      font-family: Roboto;
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 42px;
+      letter-spacing: 0.06em;
+      text-align: center;
+
+      max-width: $tablet;
+
+      margin-inline: 200px;
+    }
     .header__button {
-    margin-inline: 200px;
-   position: absolute;
-   top: 70%;
-  
-}
-@media screen and (min-width: $tablet) {
-  .header {
-    max-width: $tablet;
+      margin-inline: 200px;
+      position: absolute;
+      top: 70%;
+      left: 10%;
+    }
   }
-  .header__title {
-    font-family: Roboto;
-font-size: 26px;
-font-weight: 900;
-line-height: 42px;
-letter-spacing: 0.06em;
-text-align: center;
-
-    max-width: $tablet;
-    
-    margin-inline: 150px;
-  }
+  @media screen and (min-width: $desktop) {
+    .header {
+      max-width: $desktop;
+     
+    }
+    .header__title {
+      position: absolute;
+      margin-inline: 400px;
+      text-align: center;
+    }
     .header__button {
-    margin-inline: 200px;
-   position: absolute;
-   top: 70%;
-   left: 10%;
-
+      margin-inline: 200px;
+      position: absolute;
+      top: 70%;
+      left: 25%;
+    }
   }
-}
-@media screen and (min-width: $desktop) {
-  .header {
-    max-width: $desktop;
-  }
-  .header__title {
-
-margin-left: 350px;
-  }
-   .header__button {
-    margin-inline: 200px;
-   position: absolute;
-   top: 70%;
-   left: 30%;
-
-  }
-}
 }

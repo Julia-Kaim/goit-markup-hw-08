@@ -22,16 +22,10 @@
 @media screen and (min-width: $tablet) {
   .list {
     max-width: $tablet;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-
   }
 }
 @media screen and (min-width: $desktop) {
   .list {
-    display: flex;
-    flex-direction: row;
+    max-width: $desktop;
   }
 }

@@ -3,13 +3,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   max-width: 100vw;
- 
 
-  @media screen and (max-width: $phone) {
-    .container {
-      max-width: $phone;
-    }
-  }
   @media screen and (min-width: $tablet) {
     .container {
       max-width: $tablet;

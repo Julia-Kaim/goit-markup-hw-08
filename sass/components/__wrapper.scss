@@ -5,10 +5,7 @@
   border-bottom: 1px solid #ececec;
   margin-inline: auto;
 
-  @media screen and (max-width: $phone) {
-    .wrapper {
-      max-width: $phone;
-    }
+  
   }
   @media screen and (min-width: $tablet) {
     .wrapper {
@@ -20,4 +17,4 @@
       max-width: $desktop;
     }
   }
-}
+

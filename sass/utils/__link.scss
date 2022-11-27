@@ -45,3 +45,37 @@
     --color1: $logoColor;
   }
 }
+
+@media screen and (min-width: $tablet) {
+  .link {
+    max-width: $tablet;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .link--first {
+    position: absolute;
+    bottom: 0;
+  }
+  .link--second {
+    position: absolute;
+    top: 0;
+  }
+}
+
+// @media screen and (min-width: $desktop) {
+//   .link {
+//     max-width: $tablet;
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//   }
+//   .link--first {
+//     position: absolute;
+//     bottom: 0;
+//   }
+//   .link--second {
+//     position: absolute;
+//     top: 0;
+//   }
+// }
