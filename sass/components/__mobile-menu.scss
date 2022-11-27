@@ -1,4 +1,4 @@
-.mobile-menu__overlay .is-open {
+.mobile-menu__overlay.is-open {
   transform: translateX(0%);
   opacity: 1;
   pointer-events: initial;
@@ -38,10 +38,10 @@
     .mobile-menu {
       visibility: visible;
     }
-  @media screen and (min-width: 768px) {
-    .mobile-menu {
-      display: none;
+    @media screen and (min-width: 768px) {
+      .mobile-menu {
+        display: none;
+      }
     }
   }
-}
 }
