@@ -4,7 +4,6 @@
 
   const mobileMenu = document.querySelector("[data-menu]");
 
-
   menuOpenBtn.addEventListener("click", openModal);
   menuCloseBtn.addEventListener("click", openModal);
 
