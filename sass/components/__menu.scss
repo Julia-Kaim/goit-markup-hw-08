@@ -36,10 +36,5 @@
    left: -10px;
   }
 }
-@media screen and (min-width: $desktop) {
-  .menu {
-    visibility: visible;
-    display: flex;
-    flex-direction: row;
-  }
-}
+
+
