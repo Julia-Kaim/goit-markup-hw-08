@@ -91,7 +91,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: $phone) {
+@media screen and (max-width: $phone) {
   .item__members {
     max-width: $phone;
   }

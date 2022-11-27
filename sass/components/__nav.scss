@@ -19,12 +19,12 @@
       cursor: pointer;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__:hover svg {
+  &__:hover .svg {
     filter: invert(42%) sepia(92%) saturate(1530%) hue-rotate(185deg)
       brightness(101%) contrast(91%);
   }
 
-  @media screen and (min-width: $phone) {
+  @media screen and (max-width: $phone) {
     .nav {
       max-width: $phone;
     }

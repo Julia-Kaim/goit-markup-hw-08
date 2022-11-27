@@ -19,7 +19,7 @@
  
  }
 
-@media screen and (min-width: $phone) {
+@media screen and (max-width: $phone) {
   .team {
     max-width: $phone;
   }

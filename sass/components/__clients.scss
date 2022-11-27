@@ -1,10 +1,9 @@
 .clients {
   padding-block: 94px;
-  margin: 0 auto;
-  width: 100%;
 
-  flex-direction: column;
-  z-index: 3;
+  max-width: $phone;
+display: flex;
+flex-direction: row;
 
   &__header {
     font-size: 36px;
@@ -14,8 +13,8 @@
     text-align: center;
   }
   &__list {
-    display: flex;
-    flex-direction: column;
+margin-inline: auto;
+
   }
   &__icon {
     width: 170px;

@@ -63,7 +63,7 @@
   background-color: #f5f4fa;
 }
 
-@media screen and (min-width: $phone) {
+@media screen and (max-width: $phone) {
   .assets {
     max-width: $phone;
   }
