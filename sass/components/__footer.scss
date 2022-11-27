@@ -4,17 +4,17 @@
   width: 100%;
   margin: 0px;
   display: flex;
+  flex-direction: column;
   position: relative;
   bottom: 0;
 
   &__logo {
-  font-family: Raleway;
-font-size: 24px;
-font-weight: 700;
-line-height: 28px;
-letter-spacing: 0.03em;
-text-align: center;
-
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: center;
 
     color: $logoColor;
     text-decoration: none;
@@ -64,5 +64,23 @@ text-align: center;
     letter-spacing: 0.03em;
     text-align: left;
     color: $whiteContent;
+  }
+
+  @media screen and (min-width: $phone) {
+    .footer {
+      max-width: $phone;
+      display: flex;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    .footer {
+      max-width: $tablet;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    .footer {
+      max-width: $desktop;
+      margin-inline: auto;
+    }
   }
 }
