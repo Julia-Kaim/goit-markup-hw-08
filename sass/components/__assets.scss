@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-inline: auto;
+  margin-inline: 5px;
 
   &__header {
     font-size: 14px;
@@ -24,7 +24,6 @@
     display: inline-flex;
   }
   &__icon {
-    width: 450px;
     display: flex;
 
     justify-content: center;
@@ -32,59 +31,32 @@
     padding-bottom: 30px;
     background-color: #f5f4fa;
   }
-
-
-&__header {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: $headerColor;
-}
-
-&__description {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: $textColor;
-  padding-right: 22px;
-  display: inline-flex;
-}
-&__icon {
-  width: 270px;
-  display: flex;
-
-  justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #f5f4fa;
-}
-
-@media screen and (max-width: $phone) {
-  .assets {
-    max-width: $phone;
-  }
 }
 @media screen and (min-width: $tablet) {
   .assets {
-    max-width: $tablet;
-    flex-direction: row;
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    flex-basis: calc((100% - 60px) / 3);
+    justify-content: flex-start;
+    width: 100%;
+    margin-inline: 5px;
   }
   .assets__icon {
     padding: 20px;
+    width: 354px;
+  }
+  .assets__header {
+    width: 354px;
+  }
+  .assets__description {
+    width: 354px;
+  }
+  .list--assets {
     display: flex;
-    flex-direction: row;
-
-    gap: 30px;
-    flex-basis: calc((100% - 60px) / 3);
-    max-width: $tablet;
+    // flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .assets__item {
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: $desktop) {
@@ -93,5 +65,22 @@
     display: flex;
     flex-direction: row;
   }
-}
+  .list--assets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+  .assets--item {
+    flex-basis: calc((100% - 30px) / 4);
+  }
+  .assets__icon {
+    width: 270px;
+  }
+  .assets__description {
+    width: 270px;
+  }
+  .assets__header {
+    width: 270px;
+  }
 }
