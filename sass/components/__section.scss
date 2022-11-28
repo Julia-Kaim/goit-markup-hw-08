@@ -1,7 +1,16 @@
 .section {
   padding-block: 94px;
   margin: 0 auto;
-  flex-basis: 100%;
+
+  @media screen and (min-width: $tablet) {
+    .section {
+      max-width: $tablet;
+    }
+    .section__first {
+      background-color: $whiteContent;
+      margin-inline: 20px;
+    }
+  }
 
   @media screen and (min-width: $desktop) {
     .section {
