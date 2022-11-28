@@ -1,62 +1,63 @@
 @media not screen and (min-width: 1200px) {
   .occupation {
     display: block;
+  }
 
-    &__wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &__header {
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 42px;
-      letter-spacing: 0.03em;
-      text-align: center;
-      color: $headerColor;
-      display: flex;
-      align-self: center;
-    }
-    &__overlay {
-      height: 70px;
-      width: 370px;
-      background: #2f303acc;
-      font-family: Roboto;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      text-align: center;
-      color: $whiteContent;
-      position: relative;
-      top: -74px;
-      left: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &__overlay--first {
-      position: absolute;
-      left: 0;
-      height: 70px;
-      width: 370px;
-      background: #2f303acc;
-      font-family: Roboto;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      text-align: center;
-      color: $whiteContent;
-      position: relative;
-      top: -74px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  .occupation__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .occupation__header {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $headerColor;
+    display: flex;
+    align-self: center;
+  }
+  .occupation__overlay {
+    height: 70px;
+    width: 370px;
+    background: #2f303acc;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $whiteContent;
+    position: relative;
+    top: -74px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .occupation__overlay--first {
+    position: absolute;
+    left: 0;
+    height: 70px;
+    width: 370px;
+    background: #2f303acc;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $whiteContent;
+    position: relative;
+    top: -74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
-@media (max-width: 1199px){
+
+@media (max-width: 1199px) {
   .occupation {
     display: none;
   }
