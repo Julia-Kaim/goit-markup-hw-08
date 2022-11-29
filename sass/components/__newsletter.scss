@@ -93,7 +93,13 @@
 }
 
 @media screen and (min-width: $tablet) {
+  .newsletter__input {
+   width: 450px;
+  }
   .newsletter {
-    min-width: $tablet;
+    margin-inline: auto;
+  }
+  .newsletter__icon {
+    left: 220px;
   }
 }
