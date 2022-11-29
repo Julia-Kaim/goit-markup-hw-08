@@ -112,10 +112,7 @@
   }
   .newsletter__button {
     margin-inline: auto;
-   
-
   }
-  
 }
 @media screen and (min-width: $desktop) {
   .newsletter__input {
@@ -136,5 +133,15 @@
   }
   .newsletter {
     position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .newsletter__button {
+    margin-right: 20px;
+  }
+  .newsletter__icon {
+    position: absolute;
+    top: 0;
+    left: 470px;
   }
 }
