@@ -20,9 +20,13 @@
   &__footer {
     display: flex;
     justify-content: center;
-    
   }
   &__studio--second {
     color: $whiteContent;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .logo__footer {
+    justify-content: flex-start;
   }
 }

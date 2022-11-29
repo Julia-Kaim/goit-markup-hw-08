@@ -87,6 +87,23 @@
 @media screen and (min-width: $desktop) {
   .footer {
     min-width: $desktop;
-    margin-inline: auto;
+    text-align: left;
+  }
+  .footer__contacts {
+    padding: 0;
+  }
+  .footer__contacts--data {
+    padding: 20px;
+  }
+  .footer__position {
+    width: 30vw;
+  }
+  .footer__social-media {
+    width: 30vw;
+    right: 550px;
+  }
+  .social-media__title {
+    text-align: left;
+
   }
 }

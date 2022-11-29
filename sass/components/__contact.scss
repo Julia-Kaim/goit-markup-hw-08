@@ -32,5 +32,9 @@
   .contact__address {
     text-align: center;
   }
-  
+}
+@media screen and (min-width: $desktop) {
+  .contact__address {
+    text-align: left;
+  }
 }
