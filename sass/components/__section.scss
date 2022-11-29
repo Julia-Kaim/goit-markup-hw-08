@@ -2,23 +2,23 @@
   padding-block: 94px;
   margin: 0 auto;
 
-  @media screen and (min-width: $tablet) {
-    .section {
-      max-width: $tablet;
-    }
-    .section__first {
-      background-color: $whiteContent;
-      margin-inline: 20px;
-    }
-  }
+  // @media screen and (min-width: $tablet) {
+  //   .section {
+  //     max-width: $tablet;
+  //   }
+  //   .section__first {
+  //     background-color: $whiteContent;
+  //     margin-inline: 20px;
+  //   }
+  // }
 
-  @media screen and (min-width: $desktop) {
-    .section {
-      max-width: 1200px;
-    }
-    .section__first {
-      background-color: $whiteContent;
-      margin-inline: 20px;
-    }
-  }
+  // @media screen and (min-width: $desktop) {
+  //   .section {
+  //     max-width: 1600px;
+  //   }
+  //   .section__first {
+  //     background-color: $whiteContent;
+  //     margin-inline: 20px;
+  //   }
+  // }
 }
