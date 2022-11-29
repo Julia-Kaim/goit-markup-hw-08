@@ -26,7 +26,7 @@
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: $whiteContent;
     text-transform: uppercase;
 
@@ -34,7 +34,7 @@
   }
   &__fieldset {
     display: flex;
-    position: absolute;
+    // position: absolute;
 
     border-radius: 5px;
     padding: 0px;
@@ -75,23 +75,22 @@
     color: $whiteContent;
     border-radius: 4px;
     border: 0;
-    margin-inline: 160px;
-    margin-top: 20px;
-    margin-bottom: 55px;
+    margin-inline: auto;
     box-shadow: 0px 4px 4px 0px #00000026;
+    position: relative;
   }
 
   &__icon {
     z-index: 2;
     position: absolute;
-    top: -25px;
-    left: 230px;
+    top: 100px;
+    right: 100px;
   }
 
   &__button {
     margin-top: 20px;
-    margin-left: 220px;
-    position: relative;
+
+    // position: relative;
   }
   @media screen and (min-width: $desktop) {
     .newsletter {

@@ -18,8 +18,9 @@
   }
 
   &__footer {
-    display: block;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    
   }
   &__studio--second {
     color: $whiteContent;

@@ -2,8 +2,8 @@
   background-color: $backgroundColor;
   height: auto;
   max-width: $phone;
-  margin-inline: auto;
-  padding: 50px;
+
+  padding: 10px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -33,17 +33,18 @@
   }
 
   &__contacts {
-    margin-top: 10px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     padding: 20px;
+    text-align: center;
   }
   &__contacts--data {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: #ffffff99;
     text-decoration: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -53,10 +54,7 @@
     }
   }
   &__social-media {
-    margin-left: 50px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
+    margin-left: 5px;
   }
 
   .social-media__title {
@@ -65,7 +63,7 @@
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: $whiteContent;
   }
 }
