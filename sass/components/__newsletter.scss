@@ -89,105 +89,11 @@
 
   &__button {
     margin-top: 20px;
-
-    // position: relative;
   }
-  @media screen and (min-width: $desktop) {
-    .newsletter {
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
+}
 
-      .newsletter__label {
-        font-family: Roboto;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 14px;
-        letter-spacing: 0.01em;
-        text-align: left;
-        color: #757575;
-        z-index: 3;
-        position: absolute;
-        top: -10px;
-      }
-      .newsletter__positioning {
-        display: flex;
-        margin-top: 50px;
-      }
-
-      .newsletter__header {
-        font-family: Roboto;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 16px;
-        letter-spacing: 0.03em;
-        text-align: left;
-        color: $whiteContent;
-        text-transform: uppercase;
-
-        top: 50px;
-      }
-      .newsletter__fieldset {
-        display: flex;
-        position: absolute;
-
-        border-radius: 5px;
-        padding: 0px;
-        margin-block: 20px;
-
-        height: 50px;
-        width: 358px;
-        border: 1px solid #ffffff4d;
-      }
-      .newsletter__input {
-        line-height: 40px;
-        margin-left: 10px;
-        margin-top: 5px;
-        border-radius: 4px;
-        width: 100%;
-        color: white;
-        border: 0;
-        background-color: transparent;
-        font-size: 16px;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: transform;
-      }
-      .newsletter__input:focus {
-        outline: 0;
-      }
-
-      .newsletter__submit {
-        display: block;
-        width: 200px;
-        height: 50px;
-        background-color: $logoColor;
-        font-family: Roboto;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 30px;
-        letter-spacing: 0.06em;
-        text-align: center;
-        color: $whiteContent;
-        border-radius: 4px;
-        border: 0;
-        margin-inline: 160px;
-        margin-top: 20px;
-        margin-bottom: 55px;
-        box-shadow: 0px 4px 4px 0px #00000026;
-      }
-
-      .newsletter__icon {
-        z-index: 2;
-        position: absolute;
-        top: -25px;
-        left: 230px;
-      }
-
-      .newsletter__button {
-        margin-top: 20px;
-        margin-left: 220px;
-        position: relative;
-      }
-    }
+@media screen and (min-width: $tablet) {
+  .newsletter {
+    min-width: $tablet;
   }
 }

@@ -67,19 +67,15 @@
     color: $whiteContent;
   }
 }
-// @media screen and (max-width: $phone) {
-//   .footer {
-//     max-width: $phone;
-//     display: flex;
-//   }
-// }
-// @media screen and (min-width: $tablet) {
-//   .footer {
-//     max-width: $tablet;
-//   }
-// }
-// @media screen and (min-width: $desktop) {
-//   .footer {
-//     max-width: $desktop;
-//     margin-inline: auto;
-//   }
+
+@media screen and (min-width: $tablet) {
+  .footer {
+    min-width: $tablet;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .footer {
+    min-width: $desktop;
+    margin-inline: auto;
+  }
+}
