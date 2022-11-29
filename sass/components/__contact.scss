@@ -28,3 +28,9 @@
     display: block;
   }
 }
+@media screen and (min-width: $tablet) {
+  .contact__address {
+    text-align: center;
+  }
+  
+}

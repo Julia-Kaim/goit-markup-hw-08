@@ -71,6 +71,17 @@
 @media screen and (min-width: $tablet) {
   .footer {
     min-width: $tablet;
+    position: relative;
+  }
+  .footer__position {
+    width: 50vw;
+    margin: 10px;
+  }
+  .footer__social-media {
+    width: 50vw;
+    position: absolute;
+    right: 0;
+    top: 35px;
   }
 }
 @media screen and (min-width: $desktop) {
