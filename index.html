@@ -163,16 +163,28 @@
           <ul class="list">
             <li>
               <figure class="item__members">
-                <img
-                  src="images/img1-480.jpg"
-                  alt="Członek zespołu"
-                srcset=" 
-                  images/img1-480.jpg   450w,
-    images/img1-768.jpg   354w,
-    images/img1-1200.jpg  270w
-                 "
-                sizes="(min-width: $phone) 450px, (min-width: $tablet) 354px, (min-width: 1200px) 270px, 100vw"
+                <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img1-lg@1x.jpg 1x, ./images/studio/img1-lg@2x.jpg 2x"
+                  type="image/jpg"
                 />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/img1-md@1x.jpg 1x, ./images/studio/img1-md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/img1-sm@1x.jpg 1x, ./images/studio/img1-sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img class="teams__img" src="./images/img1.jpg" alt="user-image" />
+              </picture>
+               
                 <div class="">
                   <figcaption>
                     <div class="box__container">
@@ -195,16 +207,28 @@
             </li>
             <li>
               <figure class="item__members">
-                <img
-                  src="images/img2-480.jpg"
-                  alt="Członek zespołu"
-                 srcset=" 
-                  images/img2-480.jpg   450w,
-    images/img2-768.jpg   354w,
-    images/img2-1200.jpg  270w
-                 "
-                sizes="(min-width: $tablet) 354px, (min-width: 1200px) 270px, 100vw"
+                <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img2-lg@1x.jpg 1x, ./images/studio/img2-lg@2x.jpg 2x"
+                  type="image/jpg"
                 />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/img2-md@1x.jpg 1x, ./images/studio/img2-md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/img2-sm@1x.jpg 1x, ./images/studio/img2-sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img class="teams__img" src="./images/img2.jpg" alt="user-image" />
+              </picture>
+               
                 <figcaption>
                   <div class="box__container">
                     <strong class="box__name">John Doe</strong> Frontend
@@ -226,16 +250,28 @@
 
             <li>
               <figure class="item__members">
-                <img
-                  src="images/img3-480.jpg"
-                  alt="Członek zespołu"
-                  srcset=" 
-                  images/img3-480.jpg   450w,
-    images/img3-768.jpg   354w,
-    images/img3-1200.jpg  270w
-                 "
-                sizes="(min-width: $tablet) 354px, (min-width: 1200px) 270px"
+                <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img3-lg@1x.jpg 1x, ./images/studio/img3-lg@2x.jpg 2x"
+                  type="image/jpg"
                 />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/img3-md@1x.jpg 1x, ./images/studio/img3-md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/img3-sm@1x.jpg 1x, ./images/studio/img3-sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img class="teams__img" src="./images/img3.jpg" alt="user-image" />
+              </picture>
+               
                 <figcaption>
                   <div class="box__container">
                     <strong class="box__name">John Doe</strong> Marketing
@@ -255,16 +291,28 @@
             </li>
             <li>
               <figure class="item__members">
-                <img
-                  src="images/imgone.jpg"
-                  alt="Członek zespołu"
-                     srcset=" 
-                  images/img4-480.jpg   450w,
-    images/img4-768.jpg   354w,
-    images/img4-1200.jpg  270w
-                 "
-                sizes="(min-width: $tablet) 354px, (min-width: 1200px) 270px, 100vw"
+                <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img4-lg@1x.jpg 1x, ./images/studio/img4-lg@2x.jpg 2x"
+                  type="image/jpg"
                 />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/img4-md@1x.jpg 1x, ./images/studio/img4-md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/img4-sm@1x.jpg 1x, ./images/studio/img4-sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img class="teams__img" src="./images/img4.jpg" alt="user-image" />
+              </picture>
+              
                 <figcaption>
                   <div class="box__container">
                     <strong class="box__name">John Doe</strong> UI Designer
