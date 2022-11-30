@@ -96,6 +96,7 @@
 @media screen and (min-width: $tablet) {
   .item__members {
     width: auto;
+    flex-basis: calc((100% - 30px) / 2);
   }
   .box__container {
     padding-inline: 0;
@@ -103,12 +104,6 @@
 }
 @media screen and (min-width: $desktop) {
   .item__members {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    list-style: none;
-    display: inline-flex;
+    flex-basis: calc((100% - 30px) / 5);
   }
 }

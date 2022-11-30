@@ -10,13 +10,21 @@
     display: flex;
     flex-direction: row;
     margin: auto;
-    
   }
 }
 
 @media screen and (min-width: $tablet) {
   .list {
     max-width: $tablet;
+  }
+  .list--team {
+    display: flex;
+    // flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-direction: row;
+    list-style: none;
+      padding: 0;
   }
 }
 @media screen and (min-width: $desktop) {
@@ -25,4 +33,8 @@
     display: flex;
     flex-direction: row;
   }
+  .list__social {
+    padding-inline-start: 0;
+  }
+ 
 }
