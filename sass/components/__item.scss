@@ -41,9 +41,7 @@
   }
   &__members {
     background-color: $whiteContent;
-    width: 450px;
 
-    display: flex;
     flex-wrap: wrap;
     margin-inline: 10px;
 
@@ -82,13 +80,12 @@
   padding-inline: 80px;
   padding-top: 30px;
   padding-bottom: 30px;
-  display: block;
+
   position: relative;
   z-index: 10;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
 }
 
 @media screen and (max-width: $phone) {
@@ -98,12 +95,14 @@
 }
 @media screen and (min-width: $tablet) {
   .item__members {
-    width: 354px;
+    width: auto;
+  }
+  .box__container {
+    padding-inline: 0;
   }
 }
 @media screen and (min-width: $desktop) {
   .item__members {
-    margin-left: 93px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;

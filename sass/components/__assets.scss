@@ -64,6 +64,7 @@
     max-width: $desktop;
     display: flex;
     flex-direction: row;
+    margin-inline: auto;
   }
   .list--assets {
     display: flex;
