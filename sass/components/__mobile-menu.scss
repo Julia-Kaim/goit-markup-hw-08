@@ -10,49 +10,48 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+}
   .mobile-menu__overlay.is-open {
-    transform: translateX(0%);
+    transform: translateX(0);
     opacity: 1;
     pointer-events: initial;
     visibility: visible;
   }
 
-  .mobile-menu {
-    display: flex;
-    flex-direction: column;
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
 
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    color: $textColor;
-    opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  color: $textColor;
+  opacity: 1;
+  background-color: $whiteContent;
+  z-index: 3;
+
+  &__item {
+    color: #212121;
+
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+  }
+  &__item:hover {
+    color: $logoColor;
+  }
+  &__button {
+    border: 0;
     background-color: $whiteContent;
-    z-index: 3;
-
-    &__item {
-      color: #212121;
-
-      font-family: Roboto;
-      font-size: 40px;
-      font-weight: 500;
-      line-height: 47px;
-      letter-spacing: 0.02em;
-      text-align: left;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      transition-property: color;
-    }
-    &__item:hover {
-      color: $logoColor;
-    }
-    &__button {
-      border: 0;
-      background-color: $whiteContent;
-      position: absolute;
-      right: 0;
-    }
-    &__button:hover {
-      color: $logoColor;
-    }
+    position: absolute;
+    right: 0;
+  }
+  &__button:hover {
+    color: $logoColor;
   }
 }
