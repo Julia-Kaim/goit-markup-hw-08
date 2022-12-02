@@ -15,9 +15,11 @@
   transform: translateX(0%);
   opacity: 1;
   pointer-events: initial;
+  // visibility: visible;
+}
+.is-open {
   visibility: visible;
 }
-
 .mobile-menu {
   display: flex;
   flex-direction: column;
