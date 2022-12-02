@@ -37,6 +37,9 @@
     display: flex;
     flex-direction: row;
   }
+  .list--team {
+    gap: 50px;
+  }
   .list__social {
     padding-inline-start: 0;
   }

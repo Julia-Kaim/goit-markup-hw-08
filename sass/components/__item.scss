@@ -102,7 +102,9 @@
   }
 }
 @media screen and (min-width: $desktop) {
+ 
   .item__members {
     flex-basis: calc((100% - 30px) / 5);
+    margin-left: 50px;
   }
 }
