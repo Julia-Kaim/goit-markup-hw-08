@@ -43,6 +43,15 @@
     --color2: $logoColor;
     --color1: $logoColor;
   }
+  &--mobile-menu {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #212121;
+  }
 }
 
 @media screen and (min-width: $tablet) {
