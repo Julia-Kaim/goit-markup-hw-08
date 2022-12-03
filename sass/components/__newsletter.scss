@@ -41,7 +41,7 @@
     margin-block: 20px;
 
     height: 50px;
-    width: 358px;
+    width: 450px;
     border: 1px solid #ffffff4d;
   }
   &__input {
@@ -83,12 +83,13 @@
   &__icon {
     z-index: 2;
     position: absolute;
-    top: 100px;
-    right: 100px;
+    top: 130px;
+    right: 150px;
   }
 
   &__button {
     margin-top: 20px;
+    margin-inline: auto;
   }
 }
 

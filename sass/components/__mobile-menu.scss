@@ -90,6 +90,28 @@
   }
   &__social--first {
     border-left: 0;
+    margin-left: 50px;
+  }
+  &__link--first {
+    font-family: Roboto;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: $logoColor;
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+  &__link--second {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: $textColor;
+    margin-left: 50px;
   }
   // &__social::after {
   //   content: "";
